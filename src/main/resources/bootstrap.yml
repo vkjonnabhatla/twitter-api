@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: twitter-api
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      config:
+        enabled: true
+        defaultContext: config
+        watch:
+          delay: 1000
+    bootstrap:
+      enabled: true
